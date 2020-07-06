@@ -9,5 +9,4 @@ import java.util.List;
 public interface OfficerRepository extends JpaRepository<Officer, Integer> {
     List<Officer> findByLast(String last);
     List<Officer> findAllByRankAndLastLike(Rank rank, String last);
-
 }
